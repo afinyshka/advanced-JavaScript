@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оставить отзыв</title>
+    <title>Отзывы о продуктах</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,12 +14,11 @@
             <a href="reviews.html" class="menu-main">Просмотреть отзыв</a>
         </nav>
     </header>
-    <div class="add-review">
-        <h2>Добавить отзыв</h2>
-        <input class="product-name-area" type="text" id="productName" placeholder="Название продукта">
-        <textarea class="review-area" id="reviewText" placeholder="Отзыв"></textarea>
-        <button class="add-btn" id="addReview">Добавить отзыв</button>
+    <div class="view-reviews">
+        <h2>Просмотр отзывов</h2>
+        <select id="productsList"></select>
+        <div id="reviewsList"></div>
     </div>
-    <script src="script1.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

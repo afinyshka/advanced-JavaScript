@@ -1,41 +1,101 @@
 /* Стили для отзывов */
 * {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background: #292626;
+    color: #fff;
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #171616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: italic;
+}
+
+.logo {
+    color: #186eb0;
+    font-size: 28px;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+h2 {
+    margin: 10px;
 }
 
 .add-review {
+    margin-left: 16px;
     display: flex;
-    flex-direction: column; /* Устанавливаем вертикальное расположение элементов */
+    flex-direction: column;
+    /* Устанавливаем вертикальное расположение элементов */
     align-items: flex-start;
     gap: 10px;
     width: 50vw;
     min-width: 400px;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+.menu-main {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.menu-main:hover {
+    color: #499ee0;;
+
+}
+
 .product-name-area {
     width: 50%;
     height: 25px;
-    border-radius: 4px; 
+    border-radius: 4px;
     border: 1px solid rgb(181, 180, 180);
+    background: #2e2a2a;
+    padding-left: 8px;
+    color: #fff;
 }
 
 .review-area {
     width: 98.5%;
     height: 250px;
-    border-radius: 8px; 
+    border-radius: 8px;
     border: 1px solid rgb(181, 180, 180);
+    background: #2e2a2a;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: #fff;
 }
 
 .review-item {
-    position: relative; /* Добавляем позицию "relative" для позиционирования крестика */
+    position: relative;
+    /* Добавляем позицию "relative" для позиционирования крестика */
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f2f9ff;
-    border-radius: 8px; 
+    background-color: #322e2e;
+    border-radius: 8px;
+    margin-left: 16px;
 }
 
 .review-item p {
+    margin-left: 10px;
     margin: 0;
+    font-size: 14px;
 }
 
 .add-btn {
@@ -43,16 +103,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     color: #fff;
     border: none;
     padding: 4px 8px;
-    /* width: 20px;
-    height: 20px; */
     border-radius: 4px;
     align-self: flex-end;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /* Стили для кнопки удаления */
 .delete-button {
-    position: absolute; /* Позиционируем кнопку абсолютно внутри .review-item */
+    position: absolute;
+    /* Позиционируем кнопку абсолютно внутри .review-item */
     top: 5px;
     right: 5px;
     background-color: #de6a5d;
@@ -60,7 +119,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     border: none;
     width: 16px;
     height: 16px;
-    border-radius: 25%; 
+    border-radius: 25%;
     cursor: pointer;
 }
 
@@ -95,5 +154,12 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 /* Стили для списка продуктов */
 #productsList {
-    margin: 10px 0;
+    margin: 10px;
+    background-color: #499ee0;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 16px;
+
 }
